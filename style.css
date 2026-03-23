@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+} 
+body{
+    background-color: #f9fafb;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1f2933;
+}
+header, footer{
+    font-family: Tahoma, Geneva, sans-serif;
+    background-color: #0f172a;
+    color: white;
+}
+header{
+    padding: 25px;
+    text-align: center;
+}
+header .cta::after{
+    content: "Zadzwoń teraz i umów darmową wizytę!";
+  }
+header p,h1,a{
+    margin: 15px 0;
+}
+#dlaczego{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.dlaczego{
+    background-color: #ffffff;
+    padding: 30px;
+    min-width: 30%;
+    text-align: center;
+    border: 1px #0f172a solid;
+    box-shadow: 0px 0px 3px 0px #0f172a ;
+    margin: 50px 0;
+    border-radius: 10px;
+}
+.napis{
+    min-width: 100%;
+    text-align: center;
+    padding: 25px;
+}
+
+.kontener{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.plan{
+    padding: 10px;
+    margin: 2px;
+    border-radius: 10px;
+    width: 30%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+.plan:hover{
+    transform: scale(1.05) translateY(-6px);
+}
+.starter{
+    border: 2px #19b949 solid;
+    box-shadow: 0px 0px 3px 0px #19b949 ;
+}
+.standard{
+    border: 2px #273CF5 solid;
+    box-shadow: 0px 0px 3px 0px #273CF5 ;
+}
+.pro{
+    border: 2px #FF0000 solid;
+    box-shadow: 0px 0px 3px 0px #FF0000 ;
+}
+#opinie{
+    display: flex;
+    flex-direction: column;
+}
+#opinie2{
+    font-size: 200%;
+    margin: 30px;
+}
+.opinia{
+    border: 1px #0f172a solid;
+    box-shadow: 0px 0px 3px 0px #0f172a ;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    text-align: center;
+}
+.opinia h2{
+    padding: 0 0 10px 0;
+}
+#dale{
+    text-align: center;
+    padding: 30px;
+}
+#ostatnie{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+.cta{
+    text-decoration: none;
+    font-size: 120%;
+    color: #0f172a ;
+    background-color: #facc15;
+    padding: 8px;
+    border-radius: 10px;
+
+}
+.dolne{
+    color: #0f172a ;
+    margin: 2px;
+}
+.cta:hover{
+    text-decoration: none;
+    padding: 8px;
+    color: #facc15;
+    background-color:  #f9fafb;
+    border-radius: 10px;
+    font-size: 120%;
+}
+.dolne:hover{
+   background-color: #0f172a ;
+   color: #facc15;
+   border-radius: 10px;
+    font-size: 120%;
+    text-decoration: none;
+    padding: 8px;
+    margin: 2px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    font-size: 80%;
+}
+footer div{
+    font-size: 150%;
+}
+@media (max-width: 768px){
+  .kontener{
+    flex-direction: column;
+    align-items: center;
+  }
+  header .cta::after{
+    margin-top: 20px;
+    content: "Zadzwoń teraz!";
+  }
+  .plan{
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    min-width: 80%;
+    box-sizing: border-box;
+}
+.dlaczego{
+    margin: 25px 50px;
+}
+  #dlaczego{
+    flex-direction: column;
+    align-items: center;
+  }
+  footer{
+    grid-template-columns: 1fr auto 1fr;
+    display: grid;
+  }
+  .koniec_2{
+    justify-self: end;
+  }
+}
+section{
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
